@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Movie Store</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #1c1c1e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #f0a500;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+            font-size: 1.1rem;
+        }
+        .nav-link:hover {
+            color: #f0a500;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+        }
+        h1 {
+            font-weight: 700;
+            color: #f0a500;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        h6 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #b3b3b3;
+            line-height: 1.6;
+        }
+        img {
+            border-radius: 15px;
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(240, 165, 0, 0.2);
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(240, 165, 0, 0.4);
+        }
+        .btn-primary {
+            background-color: #f0a500;
+            border-color: #f0a500;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #d48806;
+            border-color: #d48806;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">🎬 Movie Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="available_movies">Available Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="my_movies">My Movies</a>
+                </li>
+            </ul>
+            <div>
+                <a class="nav-link" href="movie_register">New Movie Register</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center my-5">
+    <h1>WELCOME TO MOVIE STORE</h1>
+    <h6>
+        "Discover endless entertainment with the best movies in every genre!"<br>
+        "Step into our store and let your next movie night be unforgettable!"<br>
+        "From timeless classics to the latest blockbusters, we've got your movie fix!"<br>
+        "Your one-stop shop for cinematic adventures and unforgettable stories!"
+    </h6>
+    <img src="/images/dvd.jpg" width="360px" alt="DVD Image"/>
+    <div class="mt-4">
+        <a href="available_movies" class="btn btn-primary btn-lg">Browse Movies</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
